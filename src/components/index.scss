@@ -1,0 +1,57 @@
+.home-page {
+  pointer-events: none;
+  position: relative;
+
+  .active {
+    pointer-events: auto;
+  }
+}
+
+.menu {
+  font-size: 25px;
+}
+
+.cont {
+  height: 90%;
+  width: auto;
+  min-height: 566px;
+  position: absolute;
+  top: 5%;
+  margin: 0 auto;
+
+  .text-zone {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    max-height: 90%;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .home-page {
+    overflow: auto;
+    /* Allow scrolling on mobile devices */
+    position: initial;
+    /* Cancel relative positioning */
+    z-index: auto;
+    /* Cancel z-index */
+  }
+
+  svg {
+    width: 100%;
+    height: auto;
+  }
+
+  text {
+    font-size: 38px;
+  }
+
+  .bg {
+    background-color: black;
+  }
+
+  .hid {
+    overflow: hidden;
+  }
+}

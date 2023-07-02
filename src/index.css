@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&family=Poiret+One&family=Shadows+Into+Light&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply font-[Raleway];
+        background-color: black;
+        font-family: 'Poiret One', cursive;
+    }
+    li {
+        @apply px-4;
+        @apply cursor-pointer
+    }
+}
+
+.content-div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+
+.content-div:hover {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 200, 255, 0.8),
+        hsla(240, 88%, 10%, 0.8)   
+    )!important;
+}
+/* Webkit Browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #000000; /* Change this to your desired background color */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 0, 0.575); /* Set the thumb color to yellow */
+  }
+  
