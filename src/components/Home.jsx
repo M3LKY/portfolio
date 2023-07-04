@@ -2,14 +2,14 @@ import React from 'react';
 import './index.scss'
 const Home = () => {
   return (
-    <div name='home' className='home-page z-10 w-full h-screen'>
+    <div name='home' className='home-page z-10 w-full h-screen mb-[40px]'>
       {/* Container */}
       <div className='w-full mx-auto px-8 flex flex-col justify-center h-full'>
         <div className="cont">
           <div className="text-zone">
             <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="700px" height="360px">
               <defs>
-                <text id="text" x="10%" y="50%" font-family='Poiret One' fontSize="46px" fontWeight="800" textAnchor="start" alignmentBaseline="middle">
+                <text id="text" x="10%" y="50%" fontFamily='Poiret One' fontSize="46px" fontWeight="800" textAnchor="start" alignmentBaseline="middle">
                   <tspan x="5%" dy="-1.2em">Hi, </tspan>
                   <tspan x="5%" dy="1.2em">I'm Melquisedec G.</tspan>
                   <tspan x="5%" dy="1.2em">Software Engineer</tspan>

@@ -35,6 +35,9 @@
     position: initial;
     /* Cancel relative positioning */
     z-index: auto;
+    pointer-events: auto;
+
+
     /* Cancel z-index */
   }
 
@@ -53,5 +56,7 @@
 
   .hid {
     overflow: hidden;
+    
   }
 }
+

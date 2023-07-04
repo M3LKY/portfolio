@@ -12,6 +12,7 @@ import Posgre from '../assets/posgre.png';
 import Aws from '../assets/awss.png';
 import './index.scss'
 const Skills = () => {
+    //hid home-page
     return (
         <div name='skills' className='hid home-page z-10 w-full h-screen text-white mt-20 mb-10'>
             {/* Container */}
@@ -38,7 +39,7 @@ const Skills = () => {
                         <img className='w-20 mx-auto' src={Git} alt="HTML icon" />
                         <p className='my-4'>GIT</p>
                     </div>
-                    <div className='shadow-md shadow-[#000000] hover:scale-110 duration-500 rounded'>
+                    {/* <div className='shadow-md shadow-[#000000] hover:scale-110 duration-500 rounded'>
                         <img className='w-20 mx-auto' src={HTML} alt="HTML icon" />
                         <p className='my-4'>HTML</p>
                     </div>
@@ -49,7 +50,7 @@ const Skills = () => {
                     <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
                         <img className='w-20 mx-auto' src={CSS} alt="HTML icon" />
                         <p className='my-4'>CSS</p>
-                    </div>
+                    </div> */}
                     <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
                         <img className='w-20 mx-auto' src={JavaScript} alt="HTML icon" />
                         <p className='my-4'>JAVASCRIPT</p>

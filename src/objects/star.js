@@ -2,9 +2,13 @@ import * as THREE from 'three';
 import { BLOOM_LAYER, STAR_MAX, STAR_MIN } from '../config/renderConfig.js';
 import { starTypes } from '../config/starDistributions.js';
 import { clamp } from '../utils.js';
+import Img from '../../public/resources/bwhite.png'
 
-const imagePath = '../../resources/sprite120.png';
-const texture = new THREE.TextureLoader().load(imagePath);
+// Update the image path to use a relative URL
+
+// Create a new instance of TextureLoader and load the image
+const textureLoader = new THREE.TextureLoader();
+const texture = textureLoader.load(Img);
 const materials = starTypes.color.map((color) => new THREE.SpriteMaterial({ map: texture, color: color }));
 
 export class Star {

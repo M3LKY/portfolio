@@ -1,9 +1,9 @@
 import { BASE_LAYER, HAZE_MAX, HAZE_MIN, HAZE_OPACITY } from "../config/renderConfig.js";
 import { clamp } from "../utils.js";
 import * as THREE from 'three';
+import Img from '../../public/resources/white.png'
 
-const imagePath = '../../resources/feathered60.png';
-const hazeTexture = new THREE.TextureLoader().load(imagePath);
+const hazeTexture = new THREE.TextureLoader().load(Img);
 const mixColor = new THREE.Color().copy(new THREE.Color(0x0000ff)).lerp(new THREE.Color(0xffff00), 0.5);
 const hazeSprite = new THREE.SpriteMaterial({ map: hazeTexture, color: 0x8AC4D0, opacity: HAZE_OPACITY, depthTest: false, depthWrite: false });
 
